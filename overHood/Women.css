@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Oswald:wght@500&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Kanit:wght@300&family=Oswald:wght@500&family=Silkscreen&display=swap');
+body{
+    font-family: 'Kanit', sans-serif;
+    background-color: #f2f2f2;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.Deal{
+    display: block;
+    font-family: 'Gajraj One', cursive;
+    text-align: center;
+    margin: -18px -8px;
+    background-color: #FFCDA8;
+    color: black;
+    padding: 5px;
+    font-size: 25px;
+}
+.container{
+    height: 80px;
+    background-color: #ffffff;
+    margin: -15px -6px;
+}
+.logo{
+    width: 8%;
+    height: 85%;
+    padding: 7px 0px;
+    border-radius: 50px;
+}
+
+.logo:hover{
+    transform: rotate(360deg);
+    transition-duration: 4s;
+    cursor: pointer;
+}
+.Navbar{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.NavbarItems{
+    padding: 30px 1px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 5%;
+}
+.NavbarItems:hover{
+    /*color: #2e2a34;*/
+    color: #4db1bc;
+}
+.Cart{
+    position: relative;
+}
+.cartAmount{
+    position: absolute;
+    top: 65px;
+    right: 135px;
+}
+.bi-cart{
+    padding: 10px;
+}
+.ProductCard{
+    display: grid;
+    grid-template-columns: repeat(5, 223px);
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media (max-width:1000px){
+    .ProductCard{
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+@media (max-width:500px){
+    .ProductCard{
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+.ProductImg{
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+.details{
+    padding: 0px 0px 10px 10px;
+    margin-top: -8%;
+}
+.item{
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+.price{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -10%;
+    height: 40px;
+}
+.buttons{
+    display: flex;
+    margin-top: 0%;
+    gap: 10px;
+}
+.bi-dash-lg{
+    color: red;
+    cursor: pointer;
+}
+.bi-plus-lg{
+    color: green;
+    cursor: pointer;
+}

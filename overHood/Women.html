@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Women.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Shop women items</title>
+</head>
+<body>
+    <div class="MenTop">
+        <h3><span class="Deal">OVERSIZE DEALS ON OVERSIZED CLOTHES</span></h3>
+    </div>
+    <div class="container">
+      <ul class="Navbar">
+          <li><a href="LandingPart.html"><img src="https://thumbs.dreamstime.com/b/og-logo-triangle-shape-circle-outline-rounded-design-template-isolated-white-background-175951462.jpg" alt="" class="logo"></a></li>
+          <li class="NavbarItems">
+            <a href="WomenCart.html">
+            <div class="cart">
+              <i class="bi bi-cart"></i>
+              <div id="cartAmount" class="cartAmount">0</div>
+            </div>
+          </a>
+            </li>
+          </li>
+      </ul>
+    </div>
+
+    <!--<div class="wrapper">
+        <div class="product-img">
+          <img src="data:image/jpeg;base64,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" class="img1">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>White Oversized Tshirt</h1>
+            <p>The most basic and versatile tshirt. white is the colour for purity</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>78</span>$</p>
+            <button class="buyButton" type="button">buy now</button>
+          </div>
+        </div>
+      </div>
+    -->
+
+    <div class="ProductCard" id="ProductCard">
+
+    </div>
+
+    <script src="Women.js"></script>
+</body>
+</html>
